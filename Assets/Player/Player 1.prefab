@@ -98,6 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6047046480192008888}
   - component: {fileID: 3070881626839273334}
+  - component: {fileID: 8217356472037239679}
   m_Layer: 0
   m_Name: punch
   m_TagString: Untagged
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.028654575, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -144,8 +145,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.55585384, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8217356472037239679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2197918456983848939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50972507d78b83f458c7c2ce90e866bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _MyDamage: 1
+  _savedCharacter: []
 --- !u!1 &4310047836742909919
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,8 +254,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3559301, y: 0.3088627}
-  m_Size: {x: 1.2739158, y: 1.9061475}
+  m_Offset: {x: 0.40965748, y: 0.3088627}
+  m_Size: {x: 1.3813705, y: 1.9061475}
   m_Direction: 0
 --- !u!1 &4973898702389898326
 GameObject:

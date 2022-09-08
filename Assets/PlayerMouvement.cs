@@ -14,9 +14,10 @@ public class PlayerMouvement : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator _animator;
     [SerializeField] float _MovingThreshold;
+    [SerializeField] Punch _attack;
 
 
-     void Start()
+    void Start()
     {
         _AttackInput.action.started += AttackStart;
         _AttackInput.action.performed += UpdateAttack;
@@ -55,7 +56,8 @@ public class PlayerMouvement : MonoBehaviour
     }
     private void AttackStart(InputAction.CallbackContext obj)
     {
-        _animator.SetTrigger("isAttacking");
+        _attack.LaunchAttack();
+        _animator.SetTrigger("Attack");
 
     }
     private void UpdateAttack(InputAction.CallbackContext obj)
