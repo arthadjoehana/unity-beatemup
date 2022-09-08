@@ -7,13 +7,21 @@ public class PlayerMouvement : MonoBehaviour
     // Vector2 _playerMovement;
 
     [SerializeField] InputActionReference _MoveInput;
-    // [SerializeField] InputActionReference _AttackInput;
+     [SerializeField] InputActionReference _AttackInput;
 
     [SerializeField] Transform _root;
     [SerializeField] float _speed;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator _animator;
     [SerializeField] float _MovingThreshold;
+
+
+     void Start()
+    {
+        _AttackInput.action.started += AttackStart;
+        _AttackInput.action.performed += UpdateAttack;
+        _AttackInput.action.canceled += EndAttack;
+    }
 
     // Update is called once per frame
     void Update()
@@ -44,6 +52,18 @@ public class PlayerMouvement : MonoBehaviour
     {
         Vector3 moveInput = _MoveInput.action.ReadValue<Vector2>();
         rb.MovePosition(rb.transform.position + (moveInput * _speed * Time.fixedDeltaTime));
+    }
+    private void AttackStart(InputAction.CallbackContext obj)
+    {
+        _animator.SetTrigger("isAttacking");
+
+    }
+    private void UpdateAttack(InputAction.CallbackContext obj)
+    {
+
+    }
+    private void EndAttack(InputAction.CallbackContext obj)
+    {
     }
 }
 
