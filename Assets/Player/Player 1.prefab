@@ -290,9 +290,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3536491253502677}
     - target: {fileID: 8206321611182113797, guid: e6c83ff2dd1c5a742aba65a41f32ae03, type: 3}
+      propertyPath: _speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206321611182113797, guid: e6c83ff2dd1c5a742aba65a41f32ae03, type: 3}
       propertyPath: _animator
       value: 
       objectReference: {fileID: 6560291423586710770}
+    - target: {fileID: 8206321611182113797, guid: e6c83ff2dd1c5a742aba65a41f32ae03, type: 3}
+      propertyPath: _AttackInput
+      value: 
+      objectReference: {fileID: -7244205034523195179, guid: 4f66d62a6b85caa409df2ff6be3aa858, type: 3}
     - target: {fileID: 8687030324740398116, guid: e6c83ff2dd1c5a742aba65a41f32ae03, type: 3}
       propertyPath: m_Name
       value: Sprite
