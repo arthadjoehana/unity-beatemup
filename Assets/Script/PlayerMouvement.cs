@@ -56,9 +56,7 @@ public class PlayerMouvement : MonoBehaviour
     }
     private void AttackStart(InputAction.CallbackContext obj)
     {
-       // _attack.LaunchAttack();
         _animator.SetTrigger("Attack");
-
     }
     private void UpdateAttack(InputAction.CallbackContext obj)
     {
@@ -67,9 +65,9 @@ public class PlayerMouvement : MonoBehaviour
     private void EndAttack(InputAction.CallbackContext obj)
     {
     }
-    public void LaunchAttack()
+    public void ApplyDamage()
     {
-        _attack.LaunchAttack();
+        _attack.ApplyDamage();
     }
 }
 
