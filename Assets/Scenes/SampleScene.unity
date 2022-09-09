@@ -874,26 +874,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3079231807930328576, guid: 0ba56b64dcd1b0a4285948500fd80694, type: 3}
-      propertyPath: m_Size.x
-      value: 1.6669135
-      objectReference: {fileID: 0}
-    - target: {fileID: 3079231807930328576, guid: 0ba56b64dcd1b0a4285948500fd80694, type: 3}
-      propertyPath: m_Size.y
-      value: 2.3644338
-      objectReference: {fileID: 0}
-    - target: {fileID: 3079231807930328576, guid: 0ba56b64dcd1b0a4285948500fd80694, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.00000023841858
-      objectReference: {fileID: 0}
-    - target: {fileID: 3079231807930328576, guid: 0ba56b64dcd1b0a4285948500fd80694, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.15634084
-      objectReference: {fileID: 0}
-    - target: {fileID: 3079231807930328576, guid: 0ba56b64dcd1b0a4285948500fd80694, type: 3}
-      propertyPath: m_Direction
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3920379990041330956, guid: 0ba56b64dcd1b0a4285948500fd80694, type: 3}
       propertyPath: m_Name
       value: EvilMario
