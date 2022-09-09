@@ -212,7 +212,7 @@ MonoBehaviour:
   speed: 3
   _zoneChase: 7.68
   stopchase: 1
-  target: {fileID: 0}
+  target: {fileID: 8687030324740398116, guid: e6c83ff2dd1c5a742aba65a41f32ae03, type: 3}
   _myAnimator: {fileID: 9031511465672361186}
   _root: {fileID: 9031511465672361196}
   _attack: {fileID: 9031511466497609160}
