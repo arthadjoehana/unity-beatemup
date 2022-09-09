@@ -4,16 +4,30 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    int _numberOfDiskCollected;
-    private void OnTriggerEnter2D(Collider2D other)
+    private int _numberOfDiskCollected;
+
+    private void Start()
+    {
+        _numberOfDiskCollected = 0;
+        Debug.Log(_numberOfDiskCollected);
+
+    }
+    private void Update()
     {
 
-        if (other.gameObject.name == "Player")
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        if (other.attachedRigidbody.gameObject.name == "Player")
         {
             _numberOfDiskCollected++;
             Destroy(gameObject);
             Debug.Log("objet ramassé");
         }
         
+    {
+        
+    }
     }
 }
