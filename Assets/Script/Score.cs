@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class InventoryUI : MonoBehaviour
+public class Score : MonoBehaviour
 {
     private TextMeshProUGUI itemText;
 
-    // Start is called before the first frame update
     void Start()
     {
         itemText = GetComponent<TextMeshProUGUI>();
     }
 
-    public void UpdateItemText(PlayerInventory playerInventory)
+    public void UpdateItemText(PlayerScore playerScore)
     {
-        itemText.text = playerInventory.NumberOfItems.ToString();
+        itemText.text = playerScore.NumberOfItems.ToString();
     }
 }
