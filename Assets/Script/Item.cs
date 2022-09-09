@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    int _numberOfDiskCollected;
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
 
-        if (playerInventory != null)
+        if (other.gameObject.name == "Player")
         {
-            playerInventory.ItemCollected();
-            gameObject.SetActive(false);
+            _numberOfDiskCollected++;
+            Destroy(gameObject);
+            Debug.Log("objet ramassé");
         }
+        
     }
 }
