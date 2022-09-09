@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -1013,7 +1013,7 @@ TextureImporter:
       92_Assets_ENEMY_1_1: -702120151
       92_Assets_ENEMY_1_27: 331613726
       92_Assets_ENEMY_1_39: 517400429
-      92_Assets_ENEMY_1_34: -386078803
+      92_Assets_ENEMY_1_23: -5345897
       92_Assets_ENEMY_1_9: 1834966764
       92_Assets_ENEMY_1_19: -1939891795
       92_Assets_ENEMY_1_15: 1759679479
@@ -1026,7 +1026,7 @@ TextureImporter:
       92_Assets_ENEMY_1_32: 1322266809
       92_Assets_ENEMY_1_24: 480389607
       92_Assets_ENEMY_1_21: 1847571947
-      92_Assets_ENEMY_1_23: -5345897
+      92_Assets_ENEMY_1_34: -386078803
       92_Assets_ENEMY_1_6: -106635399
   spritePackingTag: 
   pSDRemoveMatte: 0
