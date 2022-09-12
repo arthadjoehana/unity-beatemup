@@ -1,36 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Item : MonoBehaviour
 {
-    private int _numberOfDiskCollected;
-    private int _playerScore;
-
-
-    private void Start()
-    {
-        _numberOfDiskCollected = 0;
-        Debug.Log(_numberOfDiskCollected);
-        _playerScore = 0;
-    }
-    private void Update()
-    {
-
-    }
+    [SerializeField] PlayerReference playerReference;
+    [SerializeField] int _diskValue;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         
         if (other.attachedRigidbody.gameObject.name == "Player")
         {
-            _numberOfDiskCollected++;
-            _playerScore += 100;
-            Destroy(gameObject);
-            Debug.Log("objet ramassé");
+            playerReference.PlayerScore.AddScore(_diskValue);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
         }
-        
-    {
-        
     }
-    }
+
+    
 }

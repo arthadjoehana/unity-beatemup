@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fdcbbfb5c9a0047811dc40b1d498dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerReference: {fileID: 11400000, guid: cccbe0634a8379d48823badfd18e4002, type: 2}
+  _diskValue: 200
 --- !u!70 &3824577045265317572
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
