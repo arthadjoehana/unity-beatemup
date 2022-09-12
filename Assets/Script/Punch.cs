@@ -13,6 +13,10 @@ public class Punch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        if (col.attachedRigidbody == null)
+        {
+            return;
+        }
         var h = col.attachedRigidbody.GetComponent<Health>();
         if (h != null)
         {
@@ -40,7 +44,7 @@ public class Punch : MonoBehaviour
         }
     }
 
-    public void LaunchAttack()
+    public void ApplyDamage()
     {
         if (_savedCharacter != null)
         {
