@@ -14,12 +14,13 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     bool _isDead;
     int currenthp;
+    int _numberOfDrop;
 
     private void Start()
     {
         _isDead = false;
         currenthp = _hp;
-      //  _deathObject.SetActive(false);
+        _numberOfDrop = 0;
     }
     
     public void Damage(int amount)
@@ -47,7 +48,9 @@ public class Health : MonoBehaviour
                 Destroy(gameObject);
                 
             }
+            if (_numberOfDrop == 0)
             dropDisk();
+            _numberOfDrop++;
         }
     }
 
