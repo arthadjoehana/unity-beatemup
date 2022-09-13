@@ -12,8 +12,7 @@ public class Health : MonoBehaviour
 
     // Start is called before the first frame update
 
-    float currenthp;
-
+   public float currenthp;
     private void Start()
     {
         currenthp = _hp;
