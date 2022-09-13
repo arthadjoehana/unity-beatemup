@@ -5,14 +5,14 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int _hp;
+    [SerializeField] float _hp;
     [SerializeField] UnityEvent _onDamage;
     [SerializeField] Animator _animator;
 
 
     // Start is called before the first frame update
 
-    int currenthp;
+    float currenthp;
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class Health : MonoBehaviour
     public void Damage(int amount)
     {
         currenthp = currenthp - amount;
-        Debug.Log(currenthp);
+        Debug.Log(currenthp / _hp);
         if (_animator != null)
         {
             _animator.SetTrigger("Hit");
