@@ -34,7 +34,9 @@ public class Punch : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
+        if (col.attachedRigidbody == null) return;
         var h = col.attachedRigidbody.GetComponent<Health>();
+
         if (h != null)
         {
             if (_savedCharacter.Contains(h))

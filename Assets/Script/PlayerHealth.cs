@@ -9,13 +9,12 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Animator _animator;
     [SerializeField] UnityEvent _ondie;
     int _currentHp;
-    // Start is called before the first frame update
+
     void Start()
     {
         _currentHp = _hp;
     }
 
-    // Update is called once per frame
     void Update()
     {
 

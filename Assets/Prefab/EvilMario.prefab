@@ -197,6 +197,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _animator: {fileID: 9031511465672361186}
+  _drop: {fileID: 2485614629271292673, guid: 3fd804ab9828f7f4a91c2a1f67749a25, type: 3}
 --- !u!114 &9031511465672361199
 MonoBehaviour:
   m_ObjectHideFlags: 0

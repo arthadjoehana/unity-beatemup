@@ -6,9 +6,9 @@ using UnityEngine;
 public class PlayerReference : ScriptableObject
 {
     PlayerScore _playerScore;
+   
 
     public PlayerScore PlayerScore { get => _playerScore; set => _playerScore = value; }
 
-    
 
 }
