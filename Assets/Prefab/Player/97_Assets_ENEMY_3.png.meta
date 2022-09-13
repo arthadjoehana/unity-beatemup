@@ -3,7 +3,7 @@ guid: c7b6e774759554481b3aa83448a841a9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1513,8 +1514,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       97_Assets_ENEMY_3_0: -538899169
-      97_Assets_ENEMY_3_55: -37511378
-      97_Assets_ENEMY_3_11: 1347830782
+      97_Assets_ENEMY_3_17: 2075973436
+      97_Assets_ENEMY_3_23: -1901595467
       97_Assets_ENEMY_3_62: -925433974
       97_Assets_ENEMY_3_27: 1745243265
       97_Assets_ENEMY_3_3: 376733447
@@ -1567,15 +1568,15 @@ TextureImporter:
       97_Assets_ENEMY_3_8: 760981740
       97_Assets_ENEMY_3_1: 967324998
       97_Assets_ENEMY_3_39: -689243898
-      97_Assets_ENEMY_3_18: 1614087975
+      97_Assets_ENEMY_3_11: 1347830782
       97_Assets_ENEMY_3_25: 1257608699
-      97_Assets_ENEMY_3_20: -1417064884
+      97_Assets_ENEMY_3_18: 1614087975
       97_Assets_ENEMY_3_14: -447117329
-      97_Assets_ENEMY_3_40: -1471605161
-      97_Assets_ENEMY_3_23: -1901595467
-      97_Assets_ENEMY_3_58: 977114109
-      97_Assets_ENEMY_3_17: 2075973436
+      97_Assets_ENEMY_3_20: -1417064884
       97_Assets_ENEMY_3_22: 1902099345
+      97_Assets_ENEMY_3_58: 977114109
+      97_Assets_ENEMY_3_40: -1471605161
+      97_Assets_ENEMY_3_55: -37511378
       97_Assets_ENEMY_3_37: -1373502845
       97_Assets_ENEMY_3_43: 1455299877
   spritePackingTag: 
