@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-public class EnemyScript : MonoBehaviour
+public class BossScript : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float _zoneChase;
@@ -12,14 +12,27 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] Animator _myAnimator;
     [SerializeField] Transform _root;
     [SerializeField] EnemyPunch _attack;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    bool _isAttacking;
+    bool _human;
+    [SerializeField] Health _myhealth;
+    [SerializeField] float _PhaseHealth;
 
     // Update is called once per frame
+
+
+    private void Start()
+    {
+        
+        _human = true;
+        if (_human == true)
+        {
+            _myAnimator.SetBool("Human",true);
+        }
+        else
+        {
+            _myAnimator.SetBool("Human", false);
+        }
+    }
     void Update()
     {
         // Attack decision
@@ -27,6 +40,7 @@ public class EnemyScript : MonoBehaviour
         {
             LaunchAttack();
             return;
+         
         }
 
         // Walk Decision
@@ -39,7 +53,9 @@ public class EnemyScript : MonoBehaviour
         {
             stopChasePlayer();
         }
+
     }
+    
     private void stopChasePlayer()
     {
         /*Do Nothing*/
@@ -48,22 +64,25 @@ public class EnemyScript : MonoBehaviour
     }
     private void ChasePlayer()
     {
-        if (transform.position.x < target.transform.position.x)
+        if (_root.position.x < target.transform.position.x)
         {
             _root.rotation = Quaternion.Euler(0, 0, 0);
-
         }
         else
         {
             _root.rotation = Quaternion.Euler(0, 180, 0);
         }
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-        _myAnimator.SetBool("isWalking", true);
+
+        if(_isAttacking == false)
+        {
+            _root.position = Vector2.MoveTowards(_root.position, target.transform.position, speed * Time.deltaTime);
+            _myAnimator.SetBool("isWalking", true);
+        }
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, _zoneChase);
+        Gizmos.DrawWireSphere(_root.position, _zoneChase);
     }
 
 
@@ -71,13 +90,14 @@ public class EnemyScript : MonoBehaviour
     public void LaunchAttack()
     {
         _myAnimator.SetTrigger("isAttacking");
-
+        _isAttacking = true;
     }
+
 
     // Je calcul les degats
     public void ApplyDamage()
     {
         _attack.ApplyDamage();
+        _isAttacking = false;
     }
 }
-

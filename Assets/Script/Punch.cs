@@ -7,7 +7,7 @@ public class Punch : MonoBehaviour
     [SerializeField] int _MyDamage;
 
     [SerializeField] List<Health> _savedCharacter;
-
+    [SerializeField] BossScript _boss;
 
 
 

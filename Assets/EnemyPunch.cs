@@ -7,8 +7,6 @@ public class EnemyPunch : MonoBehaviour
     [SerializeField] int _MyDamage;
 
     [SerializeField] List<PlayerHealth> _savedCharacter;
-    [SerializeField] Animator _animator;
-
     public bool ContainsCharacter()
     {
         if (_savedCharacter.Count > 0) return true;
