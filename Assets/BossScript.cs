@@ -24,14 +24,6 @@ public class BossScript : MonoBehaviour
     {
         
         _human = true;
-        if (_human == true)
-        {
-            _myAnimator.SetBool("Human",true);
-        }
-        else
-        {
-            _myAnimator.SetBool("Human", false);
-        }
     }
     void Update()
     {
@@ -53,9 +45,29 @@ public class BossScript : MonoBehaviour
         {
             stopChasePlayer();
         }
-
+        // human mode
+        if (_human == true)
+        {
+            _myAnimator.SetBool("Human", true);
+        }
+        else
+        {
+            _myAnimator.SetBool("Human", false);
+        }
+        // transform
+        /*if (_myhealth.currenthp <= _PhaseHealth)
+        {
+            _myAnimator.SetTrigger("Transform");
+            OnWolf();
+        }*/
     }
     
+
+    private void OnWolf()
+    {
+        _human = false;
+        _myAnimator.SetBool("Wolf", true);
+    }
     private void stopChasePlayer()
     {
         /*Do Nothing*/

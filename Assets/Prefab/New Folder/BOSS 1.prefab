@@ -51,6 +51,8 @@ MonoBehaviour:
   _myAnimator: {fileID: 1577531148182222596}
   _root: {fileID: 8490504954697495001}
   _attack: {fileID: 8490504955697500152}
+  _myhealth: {fileID: 1635948558015704468}
+  _PhaseHealth: 75
 --- !u!1 &7704835022846581429
 GameObject:
   m_ObjectHideFlags: 0

@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 9031511465672361186}
   - component: {fileID: 9031511465672361187}
   - component: {fileID: 9031511465672361184}
+  - component: {fileID: -8298958392916037103}
   - component: {fileID: 9031511465672361199}
   m_Layer: 0
   m_Name: EvilMario
@@ -197,6 +198,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _animator: {fileID: 9031511465672361186}
+  _drop: {fileID: -8298958392916037103}
+--- !u!114 &-8298958392916037103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031511465672361185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2cb8a4894b85fd4f9c0e61b49789849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _drop: {fileID: 2485614629271292673, guid: 3fd804ab9828f7f4a91c2a1f67749a25, type: 3}
 --- !u!114 &9031511465672361199
 MonoBehaviour:
@@ -213,7 +227,7 @@ MonoBehaviour:
   speed: 3
   _zoneChase: 7.68
   stopchase: 1
-  target: {fileID: 8687030324740398116, guid: e6c83ff2dd1c5a742aba65a41f32ae03, type: 3}
+  target: {fileID: 2294465241862687929, guid: e6c83ff2dd1c5a742aba65a41f32ae03, type: 3}
   _myAnimator: {fileID: 9031511465672361186}
   _root: {fileID: 9031511465672361196}
   _attack: {fileID: 9031511466497609160}
@@ -418,4 +432,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _MyDamage: 1
   _savedCharacter: []
-  _animator: {fileID: 9031511465672361186}
